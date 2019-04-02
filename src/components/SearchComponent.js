@@ -63,7 +63,7 @@ class SearchAutocomplete extends React.Component {
     return (
       <div>
         <Script 
-          url="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYE-toUOpOxTafX7-agwEuRndBwE5valw&libraries=places"
+          url="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"
           onLoad={this.handleScriptLoad}
         />
         <TextField
