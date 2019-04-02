@@ -12,7 +12,7 @@ class SideBar extends React.Component
     render() {
         return (
             <div style={sidebarStyles}>
-                <Logo />
+                <Logo style={{margin: "0 auto",display:"block", transform:"translate(0,25%)"}} />
             </div>
         )
       }
