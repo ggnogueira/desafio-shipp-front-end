@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 
 import MasterForm from './MasterForm'
 import MapComponent from './MapComponent'
+import SideBar from './SideBar';
 
 const styles = theme => ({
   root: {
@@ -20,10 +21,13 @@ class MainPage extends React.Component {
 
     return (
       <Grid container className={classes.root}>
-        <Grid item xs={6}>
+        <Grid item md={1} xs={2}>
+          <SideBar/>
+        </Grid>
+        <Grid item md={4} xs={10}>
           <MasterForm />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item md={7} xs={false}>
           <MapComponent />
         </Grid>
       </Grid>
